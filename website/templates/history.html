@@ -1,0 +1,17 @@
+<html>
+<head><title>Match history</title></head>
+<body>
+{% for match in match_list %}
+<li>Match id: {{ match.match_id }}</li>
+<li>Match duration: {{match.duration}}</li>
+<li>Radiant win: {{match.radiant_win}}</li>
+<li>Match game mode: {{match.game_mode}}</li>
+<li>Hero: {{match.hero_id}}</li>
+<li>Kills: {{match.kills}}</li>
+<li>Deaths: {{match.deaths}}</li>
+<li>Assists: {{match.assists}}</li>
+<li>Party size: {{match.party_size}}</li>
+</br>
+{% endfor %}
+</body>
+</html>
